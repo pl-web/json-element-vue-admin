@@ -1,3 +1,5 @@
+![LOGO](E:\GitHub\Json-Element-Vue-Admin\src\assets\LOGO.png)
+
 # JSON-Element-Vue-Admin
 
 ## use json-config file initial table-page form-page tree-page ...
