@@ -1,4 +1,4 @@
-![LOGO](E:\GitHub\Json-Element-Vue-Admin\src\assets\LOGO.png)
+![LOGO](\src\assets\LOGO.png)
 
 # JSON-Element-Vue-Admin
 
