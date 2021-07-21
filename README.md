@@ -1,4 +1,4 @@
-![LOGO](./src/assets/bird-logo.png)
+![LOGO](./src/assets/admin-logo.png)
 
 # JSON-Element-Vue-Admin
 
