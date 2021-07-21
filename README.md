@@ -1,4 +1,4 @@
-![LOGO](\src\assets\LOGO.png)
+![LOGO](./src/assets/logo.png)
 
 # JSON-Element-Vue-Admin
 
