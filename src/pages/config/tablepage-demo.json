@@ -1,3 +1,151 @@
 {
-  
+  "type": "TablePage",
+  "state": {
+    "name": "tablepage-demo",
+    "parent": "",
+    "created": [ "retrieve" ],
+    "card": {
+      "title": "表格型页面-示例",
+      "buttons": [
+        {
+          "type": "primary",
+          "label": "创建",
+          "action": "create"
+        }
+      ]
+    },
+    "filter": {
+      "inline": true,
+      "items": [
+        {
+          "type": "Input",
+          "label": "关键字",
+          "prop": "content",
+          "state": {
+            "value": ""
+          }
+        },
+        {
+          "type": "DatePicker",
+          "label": "选择时间",
+          "prop": "begin_time",
+          "state": {
+            "value": "",
+            "valueFormat": "yyyy-MM-dd HH:mm",
+            "format": "yyyy-MM-dd HH:mm",
+            "type": "datetime"
+          }
+        },
+        {
+          "type": "DatePicker",
+          "label": "选择时间",
+          "prop": "end_time",
+          "state": {
+            "value": "",
+            "format": "yyyy-MM-dd HH:mm",
+            "valueFormat": "yyyy-MM-dd HH:mm",
+            "type": "datetime"
+          }
+        },
+        {
+          "type": "Button",
+          "state": {
+            "label": "搜索",
+            "type": "primary",
+            "action": "retrieve"
+          }
+        }
+      ]
+    },
+    "table": {
+      "columns": [
+        {
+          "label": "序号",
+          "prop": "index"
+        },
+        {
+          "label": "姓名",
+          "prop": "name"
+        },
+        {
+          "label": "ID",
+          "prop": "id"
+        },
+        {
+          "label": "创建时间",
+          "prop": "time"
+        },
+        {
+          "label": "操作",
+          "prop": "action",
+          "scope": {
+            "type": "ButtonArray",
+            "state": [
+              {
+                "label": "编辑",
+                "type": "primary",
+                "action": "edit"
+              },
+              {
+                "label": "删除",
+                "type": "danger",
+                "action": "delete"
+              }
+            ]
+          }
+        }
+      ],
+      "data": []
+    },
+    "pagination": {
+      "currentPage": 1,
+      "pageCount": 10,
+      "total": 0,
+      "background": "",
+      "action": "retrieve"
+    },
+    "dialogs": {
+      "create": {
+        "visible": false,
+        "type": "FormPage",
+        "state": {
+          "name": "tablepage-demo.create",
+          "parent": "tablepage-demo",
+          "card": {
+            "title": "创建",
+            "buttons": [
+              {
+                "label": "确认",
+                "type": "primary",
+                "action": "create"
+              }
+            ]
+          },
+          "items": [
+            {
+              "type": "Input",
+              "label": "姓名",
+              "prop": "keywords",
+              "state": {
+                "value": ""
+              }
+            }
+          ],
+          "actions": {
+            "create": [
+              {
+                
+              }
+            ]
+          }
+        }
+      }
+    },
+    "action": {
+      "retrieve": [],
+      "delete": [],
+      "openCreateDialog": [],
+      "closeCreateDialog": []
+    }
+  }
 }
