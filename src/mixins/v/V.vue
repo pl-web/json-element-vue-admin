@@ -9,7 +9,6 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 })
 export default class V extends Vue {
   @Prop({ required: true }) mapping!: string
-  @Prop({ required: false }) parent!: string
   @Prop({ required: false }) page!: string
 
   get state() {
