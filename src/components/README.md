@@ -7,3 +7,5 @@
 ## pages => TablePage / FormPage / TreePage ...
 
 ## others => Other Component
+
+## base => BaseComponent
