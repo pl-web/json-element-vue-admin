@@ -1,6 +1,6 @@
-import V from '@/components/base/state'
+import BaseState from '@/components/base/state'
 
-export default interface AdminState extends V {
+export default interface AdminState extends BaseState {
   type: string,
   state?: any
 }
