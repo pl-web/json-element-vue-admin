@@ -1,4 +1,4 @@
-import V from '@/mixins/v'
+import V from '@/components/base/state'
 
 export default interface AdminState extends V {
   type: string,

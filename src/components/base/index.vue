@@ -1,13 +1,9 @@
-<template>
-  <div></div>
-</template>
-
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component({
 })
-export default class V extends Vue {
+export default class BaseC extends Vue {
   @Prop({ required: true }) mapping!: string
   @Prop({ required: false }) page!: string
 
@@ -18,6 +14,8 @@ export default class V extends Vue {
   get $state() {
     return {}
   }
+
+  render() {}
 
   public getChildrenMapping(mapping: string | number) {
     let m = this.mapping
@@ -67,7 +65,7 @@ export default class V extends Vue {
     
   }
 
-  public run(action: string) {
+  public runAction(action: string) {
     
   }
 }
