@@ -12,7 +12,23 @@ export default class V extends Vue {
   @Prop({ required: false }) page!: string
 
   get state() {
+    return this.$state
+  }
+
+  get $state() {
     return {}
+  }
+
+  public getChildrenMapping(mapping: string | number) {
+    let m = this.mapping
+    if (typeof m === 'number') {
+      m = `${m}[${mapping}]`
+    } else if (m[0] === '[') {
+      m = `${m}${mapping}`
+    } else if (mapping !== '') {
+      m = `${m}.${mapping}`
+    }
+    return m
   }
 
   public getAnyStateByMapping(mapping: string) {
