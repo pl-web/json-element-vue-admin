@@ -1,14 +1,11 @@
 <template>
-  <div class="home">
+  <div class="profile">
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 
-@Component({
-  components: {
-  },
-})
-export default class Home extends Vue {}
+@Component({})
+export default class Profile extends Vue {}
 </script>
