@@ -2,7 +2,6 @@
   "type": "TablePage",
   "state": {
     "name": "tablepage-demo",
-    "parent": "",
     "created": [ "retrieve" ],
     "card": {
       "title": "表格型页面-示例",
@@ -110,7 +109,6 @@
         "type": "FormPage",
         "state": {
           "name": "tablepage-demo.create",
-          "parent": "tablepage-demo",
           "card": {
             "title": "创建",
             "buttons": [
@@ -125,7 +123,7 @@
             {
               "type": "Input",
               "label": "姓名",
-              "prop": "keywords",
+              "prop": "name",
               "state": {
                 "value": ""
               }

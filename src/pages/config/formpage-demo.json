@@ -1,0 +1,40 @@
+{
+  "type": "FormPage",
+  "state": {
+    "name": "formpage-demo",
+    "created": [ "retrieve" ],
+    "card": {
+      "title": "表单型页面-示例",
+      "buttons": [
+        {
+          "label": "编辑",
+          "type": "primary",
+          "action": "openEditDialog"
+        }
+      ]
+    },
+    "items": [
+      {
+        "type": "Input",
+        "label": "姓名",
+        "prop": "name",
+        "state": {
+          "value": ""
+        }
+      },
+      {
+        "type": "Input",
+        "label": "密码",
+        "prop": "password",
+        "state": {
+          "value": "",
+          "type": "password"
+        }
+      }
+    ],
+    "actions": {
+      "retrieve": [],
+      "openEditDialog": []
+    }
+  }
+}

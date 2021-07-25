@@ -1,0 +1,10 @@
+{
+  "type": "TreePage",
+  "state": {
+    "name": "treepage-demo",
+    "created": [ "retrieve" ],
+    "tree": {},
+    "dialogs": {},
+    "actions": {}
+  }
+}
