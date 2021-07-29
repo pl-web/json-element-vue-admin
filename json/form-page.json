@@ -1,0 +1,66 @@
+{
+  "form_demo": {
+    "type": "FormPage",
+    "state": {
+      "created": "created",
+      "card": {
+        "title": "FormPage-Title",
+        "buttons": [
+          {
+            "label": "编辑",
+            "action": "openUpdateDialog",
+            "type": "primary"
+          }
+        ]
+      },
+      "items": [
+        {
+          "label": "name",
+          "prop": "name",
+          "type": "Input",
+          "state": {
+            "value": ""
+          }
+        }
+      ],
+      "dialogs": {
+        "update": {
+          "visible": false,
+          "page": "form_demo.update"
+        }
+      },
+      "actions": {
+        "created": [ "fetch" ],
+        "fetch": [
+          {
+            "name": "flows/fetch",
+            "url": "",
+            "method": "get",
+            "response": {
+              "items[0].state.value": "data.name"
+            }
+          }
+        ],
+        "openUpdateDialog": [
+          {
+            "name": "flows/assign",
+            "response": {
+              "dialogs.update.visible": true
+            }
+          }
+        ],
+        "closeUpdateDialog": [
+          {
+            "name": "flows/assign",
+            "response": {
+              "dialogs.update.visible": false
+            }
+          }
+        ]
+      }
+    }
+  },
+  "form_demo.update": {
+    
+  }
+}
