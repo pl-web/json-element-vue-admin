@@ -6,3 +6,30 @@
 
 
 ## quickly for create base-page
+
+> Page Json Config Example
+
+##### Table-Page
+
+```json
+
+{
+	"": ""
+}
+```
+
+##### Form-Page
+
+```json
+{
+	"": ""
+}
+```
+
+##### Tree-Page
+
+```json
+{
+    "": ""
+}
+```
