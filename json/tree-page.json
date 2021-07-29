@@ -1,0 +1,22 @@
+{
+  "tree_demo": {
+    "type": "TreePage",
+    "state": {
+      "created": "created",
+      "card": {
+        "title": "TreePage-Title",
+        "buttons": []
+      },
+      "tree": {
+        "header": {},
+        "nodes": []
+      },
+      "actions": {
+
+      },
+      "dialogs": {
+        
+      }
+    }
+  }
+}
