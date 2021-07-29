@@ -15,7 +15,7 @@
 
 ## Thinking Idea
 
-​	use json-config file initial table-page form-page tree-page ...  quickly for create base-page ... can expand more page types ...
+​> use json-config file initial table-page form-page tree-page ...  quickly for create base-page ... can expand more page types ...
 
 ## Page JSON-Config Example
 
