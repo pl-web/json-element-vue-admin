@@ -1,5 +1,6 @@
 <template>
   <el-button
+    :title="state.tip"
     :size="state.size"
     :type="state.type"
     :plain="state.plain"

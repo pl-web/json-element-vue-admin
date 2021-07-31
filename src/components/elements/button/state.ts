@@ -1,4 +1,4 @@
-import BaseSate from '../../base/state'
+import BaseSate from '../../base/state';
 export default interface ButtonState extends BaseSate {
   label?: string
   size?: string
