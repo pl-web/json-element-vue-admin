@@ -1,11 +1,14 @@
+<template>
+  <div></div>
+</template>
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component({
 })
 export default class BaseC extends Vue {
-  @Prop({ required: true }) mapping!: string
-  @Prop({ required: false }) page!: string
+  @Prop({ required: true }) private mapping!: string
+  @Prop({ required: false }) private page!: string
 
   get state() {
     return this.$state
@@ -14,8 +17,6 @@ export default class BaseC extends Vue {
   get $state() {
     return {}
   }
-
-  render() {}
 
   public getChildrenMapping(mapping: string | number) {
     let m = this.mapping
@@ -30,43 +31,43 @@ export default class BaseC extends Vue {
   }
 
   public getAnyStateByMapping(mapping: string) {
-
+    // ...
   }
 
   public getParentStateByMapping(mapping: string) {
-
-  }
-
-  private created() {
-    
-  }
-
-  private beforeMount() {
-    
-  }
-
-  private mounted() {
-
-  }
-
-  private beforeUpdate() {
-
-  }
-
-  private updated() {
-    
-  }
-
-  private beforeDestroy() {
-    
-  }
-
-  private destroyed() {
-    
+    // ...
   }
 
   public runAction(action: string) {
-    
+    // ...
+  }
+
+  private created() {
+    // ...
+  }
+
+  private beforeMount() {
+    // ...
+  }
+
+  private mounted() {
+    // ...
+  }
+
+  private beforeUpdate() {
+    // ...
+  }
+
+  private updated() {
+    // ...
+  }
+
+  private beforeDestroy() {
+    // ...
+  }
+
+  private destroyed() {
+    // ...
   }
 }
 </script>

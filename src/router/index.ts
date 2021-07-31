@@ -1,9 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Profile from '@/views/Profile.vue';
+import Home from '@/views/Home.vue';
 import Login from '@/views/Login.vue';
 import Register from '@/views/Register.vue';
-import Password from '@/views/Password.vue';
 import Error from '@/views/Error.vue';
 
 Vue.use(Router);
@@ -14,12 +13,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home'
+      name: 'home',
+      component: Home,
     },
     {
       path: '/profile',
       name: 'profile',
-      component: Profile,
+      component: () => import(/* webpackChunkName: "profile" */ '@/views/Profile.vue'),
     },
     {
       path: '/login',
@@ -34,12 +34,12 @@ export default new Router({
     {
       path: '/password',
       name: 'password',
-      component: Password,
+      component: () => import(/* webpackChunkName: "password" */ '@/views/Password.vue'),
     },
     {
       path: '*',
       name: 'error',
       component: Error,
-    }
+    },
   ],
 });
