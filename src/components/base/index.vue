@@ -7,7 +7,7 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 @Component({
 })
 export default class BaseC extends Vue {
-  @Prop({ required: true }) private mapping!: string
+  @Prop({ required: true }) private map!: string
   @Prop({ required: false }) private page!: string
 
   get state() {
@@ -18,23 +18,23 @@ export default class BaseC extends Vue {
     return {}
   }
 
-  public getChildrenMapping(mapping: string | number) {
-    let m = this.mapping
+  public getChildMap(map: string | number) {
+    let m = this.map
     if (typeof m === 'number') {
-      m = `${m}[${mapping}]`
+      m = `${m}[${map}]`
     } else if (m[0] === '[') {
-      m = `${m}${mapping}`
-    } else if (mapping !== '') {
-      m = `${m}.${mapping}`
+      m = `${m}${map}`
+    } else if (map !== '') {
+      m = `${m}.${map}`
     }
     return m
   }
 
-  public getAnyStateByMapping(mapping: string) {
+  public getAnyStateByMap(map: string) {
     // ...
   }
 
-  public getParentStateByMapping(mapping: string) {
+  public getParentStateByMap(map: string) {
     // ...
   }
 
