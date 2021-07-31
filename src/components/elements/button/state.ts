@@ -14,4 +14,5 @@ export default interface ButtonState extends BaseSate {
   value?: any
   action?: string
   data?: any
+  tip?: any
 }

@@ -15,7 +15,7 @@ export default class Admin extends Mixins(BaseC) {
 
   get c() {
     return {
-      render: (h: Function) => {
+      render: (h) => {
         return h(this.state.type, {
           props: {
             mapping: this.getChildrenMapping('state')
