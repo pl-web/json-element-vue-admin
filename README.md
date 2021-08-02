@@ -2,26 +2,27 @@
 
 # JSON-Element-Vue-Admin
 
-## ReadME目录 Catalogue
+## 目录 Catalogue
 
-##### 思路 [Thinking Idea](https://github.com/pl-web/json-element-vue-admin#thinking-idea)
+##### [一些想法 Thinking Idea](https://github.com/pl-web/json-element-vue-admin#thinking-idea)
 
-##### JSON配置页面示例 [Page JSON-Config Example](https://github.com/pl-web/json-element-vue-admin#page-json-config-example)
+##### [JSON配置页面示例 Page JSON-Config Example](https://github.com/pl-web/json-element-vue-admin#page-json-config-example)
 
-- [Table-Page 表格型页面](https://github.com/pl-web/json-element-vue-admin#table-page)
-- [Form-Page 表单型页面](https://github.com/pl-web/json-element-vue-admin#form-page)
-- [Tree-Page 树状型页面](https://github.com/pl-web/json-element-vue-admin#tree-page)
-- [Multi-Page 复合型页面（主体多组合页面）](https://github.com/pl-web/json-element-vue-admin#multi-page)
+- [表格型页面 Table-Page](https://github.com/pl-web/json-element-vue-admin#table-page)
+- [表单型页面 Form-Page](https://github.com/pl-web/json-element-vue-admin#form-page)
+- [树状型页面 Tree-Page](https://github.com/pl-web/json-element-vue-admin#tree-page)
+- [复合型页面（主体多组合页面） Multi-Page](https://github.com/pl-web/json-element-vue-admin#multi-page)
 
-## Thinking Idea
+## 一些想法 Thinking Idea
 
+书写JSON文件，根据JSON文件自动生成后台管理型页面内容，快速地生产页面，管理页面和操作页面。
 ​> use json-config file initial table-page form-page tree-page ...  quickly for create base-page ... can expand more page types ...
 
-## Page JSON-Config Example
+## JSON配置页面示例 Page JSON-Config Example
 
 > can browse the JSON folder
 
-### Table-Page
+### 表格型页面 Table-Page
 
 ```json
 {
@@ -135,7 +136,7 @@
 }
 ```
 
-### Form-Page
+### 表单型页面 Form-Page
 
 ```json
 {
@@ -206,7 +207,7 @@
 }
 ```
 
-### Tree-Page
+### 树状型页面 Tree-Page
 
 ```json
 {
@@ -233,7 +234,7 @@
 }
 ```
 
-### Multi-Page
+### 复合型页面（主体多组合页面） Multi-Page
 
 ```json
 [
