@@ -1,40 +1,90 @@
 {
-  "type": "FormPage",
-  "state": {
-    "name": "formpage-demo",
-    "created": [ "retrieve" ],
-    "card": {
-      "title": "表单型页面-示例",
-      "buttons": [
-        {
-          "label": "编辑",
-          "type": "primary",
-          "action": "openEditDialog"
-        }
-      ]
-    },
-    "items": [
-      {
-        "type": "Input",
-        "label": "姓名",
-        "prop": "name",
-        "state": {
-          "value": ""
-        }
+  "form_page": {
+    "type": "FormPage",
+    "state": {
+      "created": [
+        "retrieve"
+      ],
+      "card": {
+        "title": "表单型页面-示例",
+        "buttons": [
+          {
+            "label": "取消",
+            "action": "closeEditDialog"
+          },
+          {
+            "label": "编辑",
+            "type": "primary",
+            "action": "openEditDialog"
+          }
+        ]
       },
-      {
-        "type": "Input",
-        "label": "密码",
-        "prop": "password",
-        "state": {
-          "value": "",
-          "type": "password"
+      "items": [
+        {
+          "type": "Input",
+          "label": "姓名",
+          "prop": "name",
+          "state": {
+            "value": ""
+          }
+        },
+        {
+          "type": "Input",
+          "label": "密码",
+          "prop": "password",
+          "state": {
+            "value": "",
+            "type": "password"
+          }
         }
+      ],
+      "actions": {
+        "retrieve": [],
+        "openEditDialog": [
+          {
+            "name": "flows/assign",
+            "response": {
+              "dialogs.edit.visible": true
+            }
+          }
+        ],
+        "closeEditDialog": [
+          {
+            "name": "flows/assign",
+            "response": {
+              "dialogs.edit.visible": false
+            }
+          }
+        ]
       }
-    ],
-    "actions": {
-      "retrieve": [],
-      "openEditDialog": []
+    }
+  },
+  "form_page.edit": {
+    "type": "FormPage",
+    "state": {
+      "items": [
+        {
+          "type": "Input",
+          "label": "姓名",
+          "prop": "name",
+          "state": {
+            "value": ""
+          }
+        }
+      ],
+      "actions": {
+        "edit": [
+          {
+            "name": "flows/update",
+            "url": "",
+            "method": "post",
+            "request": {
+              "name": "items[0].state.value"
+            }
+          },
+          "form_page.closeEditDialog"
+        ]
+      }
     }
   }
 }
