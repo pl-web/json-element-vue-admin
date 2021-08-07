@@ -1,16 +1,15 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
+import Vue from 'vue'
+import Vuex from 'vuex'
+import { PageModuleStore } from './modules/page'
 
-Vue.use(Vuex);
+interface AdminStore {
+  page: PageModuleStore
+}
 
-export default new Vuex.Store({
-  state: {
+Vue.use(Vuex)
 
-  },
-  mutations: {
+const store = new Vuex.Store<AdminStore>({
+  // empty, register modules
+})
 
-  },
-  actions: {
-
-  },
-});
+export default store
