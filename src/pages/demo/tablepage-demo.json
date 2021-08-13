@@ -1,8 +1,8 @@
 {
   "type": "TablePage",
   "state": {
-    "name": "tablepage-demo",
-    "created": [ "retrieve" ],
+    "name": "table_page",
+    "created": "retrieve",
     "card": {
       "title": "表格型页面-示例",
       "buttons": [
