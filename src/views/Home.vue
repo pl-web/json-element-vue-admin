@@ -1,5 +1,5 @@
 <template>
-  <div class="admin">
+  <div class="admin-home">
     <side-bar />
   </div>
 </template>
@@ -7,17 +7,15 @@
 <script lang="ts">
 import Vue from 'vue'
 import { Component } from 'vue-property-decorator'
-import SideBar from './sidebar/index.vue' 
+import SideBar from '@/components/layout/sidebar/index.vue' 
 
 @Component({
-  name: 'Layout',
+  name: 'Home',
   components: {
     SideBar
   }
 })
-export default class Layout extends Vue {
+export default class Home extends Vue {
   
-  
-
 }
 </script>
