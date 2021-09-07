@@ -1,4 +1,5 @@
 type Action = () => void
+
 export default interface BaseState {
     created?: string | string[] | Action
     beforeMount?: string | string[] | Action
