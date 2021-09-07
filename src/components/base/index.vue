@@ -3,6 +3,7 @@
 </template>
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
+import AdminComponentState from '../admin/AdminComponent/AdminComponentState';
 
 @Component({
 })
@@ -10,12 +11,15 @@ export default class BaseC extends Vue {
   @Prop({ required: true }) private map!: string
   @Prop({ required: false }) private page!: string
 
-  get state() {
+  get state(): AdminComponentState {
     return this.$state
   }
 
-  get $state() {
-    return {}
+  get $state(): AdminComponentState {
+    return {
+      type: '',
+      state: ''
+    }
   }
 
   public getChildMap(map: string | number) {
